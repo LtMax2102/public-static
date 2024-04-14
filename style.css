@@ -48,9 +48,11 @@ img:hover {
 }
 
 .overlay div {
-    border: 1px solid yellow;
+    background: crimson;
+    border: 1px solid floralwhite;
     width: 600px;
     height: 300px;
+    padding: 5px;
 }
 
 .overlay div header {
@@ -59,6 +61,7 @@ img:hover {
     text-align: center;
     font-size: 55px;
     font-family: sans-serif;
+    border-bottom: 1px solid black;
 }
 
 .overlay div main {

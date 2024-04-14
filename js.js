@@ -23,6 +23,7 @@ window.onload = () => {
         let clone = template.cloneNode(true);
         clone.querySelector("p").textContent = i;
         clone.querySelector("img").src = info[i][2];
+        clone.querySelector("img").alt = info[i][2];
         clone.style.background = info[i][3];
 
         clone.addEventListener("click", (event) => {
