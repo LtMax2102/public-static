@@ -1,3 +1,5 @@
+let base = false;
+
 let overlay = document.getElementsByClassName("overlay")[0];
 let template = document.querySelector("template").content.querySelector("div");
 let card_con = document.getElementsByClassName("card-container")[0];
@@ -14,6 +16,22 @@ let info = [
     ["tilte3", "mainbody3", "cat3.jpg", "yellow"],
     ["tilte4", "mainbody4", "cat4.jpg", "salmon"]
 ]
+
+
+document.querySelector("button").addEventListener("click", () => {
+    if (base) {
+        document.querySelectorAll("div")[8].style.transform = "translateX(0)";
+        document.querySelectorAll("div")[8].style.borderRadius = "25px 0 0 25px";
+        base = false;
+    }
+    else {
+        document.querySelectorAll("div")[8].style.transform = "translateX(250px)";
+        document.querySelectorAll("div")[8].style.borderRadius = "0 25px 25px 0";
+        base = true;
+    }
+})
+
+
 
 window.onload = () => {
     console.log(info);
